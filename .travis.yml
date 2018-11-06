@@ -71,6 +71,7 @@ script:
 - cordova plugin add cordova-plugin-whitelist
 - cordova plugin ls
 - cordova platform ls
+- cordova platform add android
 - cordova build android
 deploy:
   provider: releases
