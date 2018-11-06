@@ -31,8 +31,6 @@ matrix: # A matrix is used to split the iOS and Android deployments as each has 
         - travis_retry sudo apt-get update -qq
         - travis_retry sudo apt-get install -y -qq yarn
         - npm install -g cordova ionic
-      install:
-        - yarn
       android:
         components:
         # Uncomment the lines below if you want to
