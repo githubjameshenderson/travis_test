@@ -30,11 +30,7 @@ matrix: # A matrix is used to split the iOS and Android deployments as each has 
         - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
         - travis_retry sudo apt-get update -qq
         - travis_retry sudo apt-get install -y -qq yarn
-        - echo -e "machine github.com\n login $CI_USER_TOKEN" >> ~/.netrc # Logging into Github
-        - sudo apt-get install ruby-dev
-        - gem install fastlane -v 2.93.1 -NV
         - npm install -g cordova ionic
-        - npm install -D @ionic/v1-toolkit
       install:
         - yarn
       android:
