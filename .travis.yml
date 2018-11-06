@@ -71,7 +71,7 @@ script:
 - cordova plugin add cordova-plugin-whitelist
 - cordova plugin ls
 - cordova platform ls
-- if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then ./travis/build-android.sh ; fi
+- cordova build android
 deploy:
   provider: releases
   api_key:
